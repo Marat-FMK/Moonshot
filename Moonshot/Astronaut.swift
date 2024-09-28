@@ -7,12 +7,8 @@
 
 import SwiftUI
 
-struct Astronaut: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Astronaut()
+struct Astronaut: Codable, Identifiable {
+    let id : String
+    let name: String
+    let description: String
 }
