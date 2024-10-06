@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                if isGridView {
+                if isGridView { // add listView or Gridview
                     
                     LazyVGrid(columns: columns) {
                         ForEach(mission) { mission in
