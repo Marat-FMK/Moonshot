@@ -16,6 +16,7 @@ struct MissionAstronauts: View {
             HStack {
                 ForEach(crew, id: \.role) { crewMember in
                     NavigationLink {
+                        
                         AstronautView(astronaut: crewMember.astronaut)
                     } label: {
                         HStack {
@@ -35,7 +36,9 @@ struct MissionAstronauts: View {
                                 Text(crewMember.role)
                                     .foregroundStyle(.white.opacity(0.5))
                             }
+                            
                         }
+                        
                         .padding(.horizontal)
                     }
                 }
