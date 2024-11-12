@@ -46,12 +46,15 @@ struct ContentView: View {
                                     .frame(maxWidth: .infinity)
                                     .background(.lightBackground)
                                 }
+                                .accessibilityElement()
+                                .accessibilityLabel(Text(" Transition to \(mission.displayName)"))
                                 .clipShape(.rect(cornerRadius: 10))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(.lightBackground)
                                 )
                             }
+                            
                         }
                     }
                     .padding([.horizontal, .bottom])
@@ -73,6 +76,8 @@ struct ContentView: View {
                             Text(mission.displayName)
                                 .padding()
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel(Text(" Transition to \(mission.displayName)"))
                         .padding()
                         
                     }
