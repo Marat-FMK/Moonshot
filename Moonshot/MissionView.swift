@@ -38,6 +38,8 @@ struct MissionAstronauts: View {
                             }
                             
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel(Text("Astronaut - \(crewMember.astronaut.name)"))
                         
                         .padding(.horizontal)
                     }
